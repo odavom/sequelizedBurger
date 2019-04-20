@@ -1,0 +1,43 @@
+.jumbotron{
+    text-align: center;
+    background-color: #ffcc00;
+}
+.container{
+    max-width:960px;
+    margin-top:25px
+}
+.col-xs-12.col-md-6 {
+    text-align: center;
+    list-style-position: inside;
+}
+.col-xs-12.col-md-12 {
+    text-align: center;
+    
+}
+label{
+    font-size: 20px;
+}
+li {
+    margin-bottom: 18px;
+    background-color: #ffcc00;
+    padding: 9px;
+    border: 2px solid black;
+    box-shadow: 3px 4px #b60000e0;
+} 
+img{
+    width:95px;
+}  
+
+.row{
+    padding:20px;
+}
+h3{
+    font-family: 'Abril Fatface', cursive;
+/* font-family: 'Days One', sans-serif; */
+    /* font-family: 'Squada One', cursive; */
+
+}
+body{
+    font-family: 'Song Myung', serif; 
+    font-size:17px;
+}

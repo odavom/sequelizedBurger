@@ -1,0 +1,51 @@
+{{!-- <p>Successfully connected!</p> --}}
+<div class="jumbotron">
+  <img src="/assets/img/burger.jpeg" alt="burger">
+  <h2>Eat-Da-Burger!</h2>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-md-6">
+      <div id="burgerlistBox">
+        <h3>Ready to Eat Burgers</h3>
+        <ol>
+          {{#each burger}} {{#unless devoured}}
+          <li>
+            {{burger_name}}
+              <button data-id={{id}} class="devourB btn btn-success">Devour it!</button>    
+
+          </li>
+          {{/unless}} {{/each}}
+        </ol>
+      </div>
+    </div>
+    <div class="col-xs-12 col-md-6">
+      <h3>Devoured Burgers</h3>
+      <div id="devouringlistBox">
+        <ol class="center">
+          {{#each burger}} {{#if devoured}}
+          <li>{{burger_name}}
+          <button data-id={{id}} class="deleteB btn btn-danger">Delete</button>
+          </li>
+          {{/if}} {{/each}}
+        </ol>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-xs-12 col-md-12">
+
+      <form class="create-form">
+
+        <div class="form-group">
+          <label for="addBurger">Enter your favorite burger:</label>
+          <input type="text" id="addBurger" name="burgerName">
+        </div>
+
+        <button class="btn btn-success" type="submit">Add Burger</button>
+
+      </form>
+    </div>
+    </div>
+    </div>
